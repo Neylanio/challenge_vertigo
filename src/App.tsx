@@ -1,8 +1,8 @@
-import React, { useCallback, useEffect, useState, useMemo } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import api from "./services/api";
 
 import { FiXCircle } from "react-icons/fi";
-import Personagem from "./components/Personagem/index.";
+import Personagem from "./components/Personagem";
 
 import { Container, Dropdown, Button, DropdownItem } from "./style";
 
