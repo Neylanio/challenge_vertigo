@@ -4,7 +4,7 @@ import api from "./services/api";
 import { FiXCircle } from "react-icons/fi";
 import Personagem from "./components/Personagem";
 
-import { Container, Dropdown, Button, DropdownItem } from "./style";
+import { Container, Dropdown, DropdownItem, Button } from "./style";
 
 interface PersonagemContent {
   name: string;
@@ -39,7 +39,7 @@ const App: React.FC = () => {
     <Container>
       <Dropdown className="dropdown">
         <button
-          className="btn btn-secondary dropdown-toggle"
+          className="btn btn-primary dropdown-toggle"
           type="button"
           id="dropdownMenuButton"
           data-toggle="dropdown"
