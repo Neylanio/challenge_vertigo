@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { Button as Btt } from "react-bootstrap";
 
+interface dropItemProps {
+  color: string;
+}
+
 export const Container = styled.section`
   margin: 0;
   padding: 0;
@@ -26,16 +30,26 @@ export const Container = styled.section`
 export const Dropdown = styled.div`
   margin: 50px 0px;
   font-size: 8pt;
+  div {
+    background: #c5c5c5;
+  }
 
   @media (max-width: 768px) {
     margin-left: 10px;
   }
 `;
 
-export const DropdownItem = styled.div`
+export const DropdownItem = styled.div<dropItemProps>`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: ${ props => props.color };
+
+  &:hover {
+    background: #c5c5c5;
+    color: ${ props => props.color };
+  }
+
   div {
     padding-left: auto;
   }

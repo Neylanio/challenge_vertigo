@@ -50,7 +50,7 @@ const App: React.FC = () => {
         </button>
         <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
           {personagensDropItem.map(item => (
-            <DropdownItem className="dropdown-item" key={item.name}>
+            <DropdownItem className="dropdown-item" key={item.name} color={item.eye_color}>
               <div>{item.name}</div>
 
               <div>
